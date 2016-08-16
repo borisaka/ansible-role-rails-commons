@@ -1,0 +1,5 @@
+---
+# tasks file for rails-project-commons
+- include: database.yml
+- include: redis.yml
+- include: rabbitmq.yml

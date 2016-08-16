@@ -1,0 +1,9 @@
+---
+  - role: debops.postgresql_server
+  - role: postgresql
+    vars:
+      postgresql__roles: [{{ rails__project__app_name }}]
+      postgresql__databases:
+        - name={{ rails__project_app_name }}_development owner= {{ rails_project__app_name }}
+        - name={{ rails__project_app_name }}_test owner= {{ rails_project__app_name }}
+        - name={{ rails__project_app_name }}_production owner= {{ rails_project__app_name }}

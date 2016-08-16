@@ -1,0 +1,8 @@
+---
+# defaults file for rails-project-commons
+rails_project__db_type: 'postgresql'
+rails_project__app_name: 'rails_project'
+rails_project__user: {{ rails_project_name }}
+rails_project__services_enabled:
+  - postgresql
+  - redis
